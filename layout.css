@@ -1,0 +1,61 @@
+body
+{
+  
+   font-family: comic sans ms;
+   background-color: rgb(50, 60, 70);
+   /*border: 5px solid black;*/
+   height: 100vh;
+   margin: 0;
+
+}
+
+.container
+{
+
+   display: flex;
+   height: calc(100% - 150px);
+
+}
+
+header
+{
+  background-color: brown;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+
+}
+
+header > img
+{
+
+   height: 40px;
+
+}
+
+main
+{
+
+    background-color: #dce4f7;
+    width: calc(100% - 100px);
+
+}
+
+aside
+{
+
+    background-color: brown;
+    width: 100px;
+
+}
+
+footer
+{
+
+    background-color: #f8f3bf;
+    height: 50px;
+
+}

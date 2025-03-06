@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    margin-top: 50px;
+}
+
+nav{
+    background-color: aquamarine;
+    display: flex;
+    font-family: Candara;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.dropdown{
+    background-color: chocolate;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+    color: rgb(207, 168, 155);
+    font-size: 22px;
+}
+
+.dropdown > div{
+    background-color: darksalmon;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 100px;
+    transition: 1s;
+    font-size: 15px;
+}
+
+.dropdown > div > a{
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown > div > a:hover{
+    background-color: coral;
+}
+
+.dropdown:hover > div{
+    display: flex;
+}

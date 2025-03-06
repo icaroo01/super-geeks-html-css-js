@@ -1,0 +1,64 @@
+body{
+    background-color: rgb(47, 47, 47);
+    /*color: orange;*/
+    margin: 0;
+}
+p{
+    color: red;
+    font-size: 30px;
+    font-family: Comic Sans MS;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+
+/*img{
+
+   height: 500px;
+   width: 500px;
+   border: 8px solid peachpuff;
+   border-radius: 50px;
+
+}*/
+
+label{
+
+  background-color: blueviolet;
+  /*margin: 20px;*/
+  padding: 0 20px;
+
+}
+div{  
+
+  
+  border: 1px solid darkslategray;
+  background-color: darkslategray;
+  color: white;
+  width: 200px;
+  border: 2px solid darkslategray;
+
+  /*background-color: brown;
+  margin: 20px;
+  padding: 10px;
+  margin-top: 20px;
+  padding-left: 10px;
+  margin-bottom: 20px;*/
+
+}
+
+div > div{
+
+    background-color: forestgreen;
+    width: 50%; 
+    
+
+    /*border: 2px solid red;*/
+
+}
+
+
+
+/*label,div{
+
+ color: orange;
+
+}*/

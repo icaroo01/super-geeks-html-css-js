@@ -1,0 +1,53 @@
+body{
+
+    background-color: rgb(71, 114, 73);
+    margin: 0;
+  
+  }
+  nav{
+     
+    background-color: green;
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    gap: 10px;
+    align-items: center;
+    font-size: 20px;
+    font-family: Arial;
+    border-bottom: 5px solid rgb(2, 172, 2) ;
+    > img{
+      height: 50px ;
+    }
+    
+  
+    
+  }
+  
+  nav > div > a{
+  
+      color: bisque;
+      background-color: rgb(37, 87, 24);
+      text-decoration: none;
+      padding: 6px;
+      border-radius: 4px;
+  
+  }
+  nav > div > a:hover{
+  
+     background-color: rgb(11, 180, 11);
+     text-decoration: underline;
+     padding: 10px;
+  
+  }
+  
+  main{
+  
+    background-color: rgb(0, 85, 0);
+    margin: 50px;
+    color: bisque;
+    padding: 10px;
+    border-radius: 10px;
+  
+  
+  }

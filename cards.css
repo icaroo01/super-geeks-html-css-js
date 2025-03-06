@@ -1,0 +1,52 @@
+body{
+
+   background-color: white;
+   
+
+}
+
+.cards{
+
+    
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+
+}
+
+.cards > a{
+
+   border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   padding: 5px;
+   gap: 5px;
+   text-decoration: none;
+   color: black;
+
+}
+
+.cards > a:hover{
+
+    background-color: rgb(179, 178, 178);
+    
+
+}
+
+.cards > a > img{
+
+    width: 150px;
+    height: 150px;
+    
+}
+
+.cards > a > label{
+
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
