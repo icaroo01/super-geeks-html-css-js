@@ -45,11 +45,21 @@ function avaliar(){
 
     for(i=0; i<=5; i++){
         
-     document.getElementById('mensagem').innerHTML = i
+     document.getElementById('mensagem').innerHTML += i
      
 
     }
 
    }
 
-   
+   function palavra1(){
+      palavra = document.getElementById('palavra').value
+      if(palavra == 'super'){
+       document.getElementById('caixa').innerHTML += "<div class='especial'>"+palavra+"</div>"
+      }else{
+       document.getElementById('caixa').innerHTML += "<div>"+palavra+"</div>"
+      }
+      
+      document.getElementById('palavra').value = ""
+
+   }
