@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="aula7.css">
+    <script src="aula7.js"></script>
+</head>
+<body>
+    
+
+    <div id="caixa">caixa</div>
+    <div>
+        <h3>Editar Cor</h3>
+        <button onclick="pintarcaixa('red')">pintar de vermelho</button>
+        <br>
+        <br>
+        <button onclick="pintarcaixa('blue')">pintar de vermelho</button>
+        <br>
+        <br>
+    
+        <button onclick="pintarcaixa('green')">pintar de vermelho</button>
+        <br>
+        <br>
+    
+        <input id="codigocor" type="color">
+        <button onclick="colorircaixa()">pintar de cor personalizada</button>
+        <br>
+    <br>
+    <h3>Editar Tamanho</h3>
+    <input id="altura" type="number" placeholder="mudar altura">
+    <input id="largura" type="number" placeholder="mudar largura">
+    <button onclick="redimensionarcaixa()">redimensionar tamanho da caixa</button>
+    <br>
+    <br>
+    <h3>Editar Borda</h3>
+    <input id="espessuraborda" type="number" placeholder="espessura">
+    <select name="" id="estiloborda">
+        <option value="solid">sólido</option>
+        <option value="dashed">tracejado</option>
+        <option value="dotted">pontilhado</option>
+        <option value="double">dupla</option>
+
+    </select>
+    <input id="corborda" type="color">
+    <button onclick="mudarborda()">mudar borda</button>
+</div>
+   
+    
+</body>
+</html>
