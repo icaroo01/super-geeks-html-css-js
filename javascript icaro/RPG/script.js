@@ -8,6 +8,10 @@ function enviarficha(){
     arma = document.getElementById('arma').value
     foto = document.getElementById('foto').value
 
+    nivel = 1
+    vida = 10 + nivel + (con*5)
+    armadura = 10 + nivel + des
+
     fichaValida = true
 
     if( nome.length < 2 || nome.length > 10){
@@ -23,12 +27,19 @@ function enviarficha(){
 
     somaAtributos = forc+des+con+int+car
     if( somaAtributos > 8){
-        alert('Você ultrapassou o limite colocando '+somarAtributos+' pontos.')
+        alert('Você ultrapassou o limite colocando '+somaAtributos+' pontos.')
         fichaValida = false
     }
     if( fichaValida == true){
-        document.getElementById('ficha').innerHTML = ''
-        document.getElementById('ficha').innerHTML += '<div class="perfil"><img src="'+foto+'"><h2>'+nome+'<h2></div>'
-        document.getElementById('ficha').innerHTML += ''
+
+        document.getElementById('ficha').style.display = 'none'
+        document.getElementById('fichapronta').style.display = 'block'
+
+        document.getElementById('nomeficha').innerHTML = nome
+        document.getElementById('infoficha').innerHTML = 'Arma: '+arma+'<br>Vida: '+vida+'<br>Armadura: '+armadura
+        document.getElementById('fotoficha').src = foto
+        document.getElementById('atributosficha').innerHTML = 'Força: '+forc+'| Destreza: '+des+'| Constituição: '+con+'| Inteligência: '+int+'| Carisma: '+car
+
     }
+
 }
