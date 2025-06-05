@@ -3,30 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ficha RPG</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
 <body>
-    
-    <h1>RPG</h1>
-    
+
     <div id="ficha">
-        <h2>Monte a ficha do seu personagem</h2>
+        <h2>Monte a sua ficha RPG</h2>
 
     
 
-    <br><br>Nome: <input id="nome" type="text"><br>
+    <br><br>Nome: <input id="nome" placeholder="Nome do personagem" type="text"><br>
+    <br>
     Foto <input id="foto" type="text" placeholder="insira o endereço da imagem">
 
     
     
-    <br><br><b>Você tem 8 pontos para gastar nos atributos</b><br>
+    <br><br><b>Distribua seus 8 atributos</b><br>
+    <br>
     Força: <input id="for" type="number" min="0" max="20" value="0"><br>
+    <br>
     Destreza: <input id="des" type="number" min="0" max="20" value="0"><br>
+    <br>
     Constituição: <input id="con" type="number" min="0" max="20" value="0"><br>
+    <br>
     Inteligência: <input id="int" type="number" min="0" max="20" value="0"><br>
+    <br>
     Carisma: <input id="car" type="number" min="0" max="20" value="0"><br><br>
+    <br>
 
     Arma:
     <select name="" id="arma">
@@ -35,10 +40,11 @@
         <option value="Arco">Arco</option>
         <option value="Bastão">Bastão</option>
     </select>
+    <br>
 
     
     
-    <br><br><button onclick="enviarficha()">Confirmar ficha</button>
+    <br><br><button class="botaoconfirmar" onclick="enviarficha()">Confirmar</button>
     </div>
 
     <div id="fichapronta">
