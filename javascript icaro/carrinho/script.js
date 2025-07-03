@@ -1,4 +1,6 @@
-lista = []
+lista = JSON.parse(localStorage.getItem('listadecompras')) || []
+
+window.onload = carregarlista
 
 function additem(){
 
@@ -27,10 +29,10 @@ function carregarlista(){
     document.getElementById('listadecompras').innerHTML = ''
     for( i = 0; i< lista.length; i++ ){
         document.getElementById('listadecompras').innerHTML += 
-        '<div>'+lista[i]+' <button onclick="removeritem('+i+')">X</button> <button onclick="desceritem('+i+')" >▼</button></div>'
+        '<div>'+lista[i]+' <button onclick="removeritem('+i+')">X</button> <button onclick="desceritem('+i+')" >▼</button><button onclick="subiritem('+i+')" >▲</button></div>'
     }
     document.getElementById('quantidade').innerHTML = lista.length
-
+    localStorage.setItem('listadecompras',JSON.stringify(lista))
 }
 
 function limparlista(){
@@ -39,5 +41,24 @@ function limparlista(){
 }
 
 function desceritem(i){
-    
+     if( i < lista.length-1 ){
+            aux = lista[i]
+    lista[i] = lista[i+1]
+    lista[i+1] = aux
+    carregarlista()
+     }
+}
+
+function subiritem(i){
+    if( i > 0 ){
+        aux = lista[i]
+    lista[i] = lista[i-1]
+    lista[i-1] = aux
+    carregarlista()
+    }
+}
+
+function ordenarlista(){
+        lista.sort()
+        carregarlista()
 }
