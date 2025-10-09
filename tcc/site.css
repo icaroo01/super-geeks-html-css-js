@@ -103,12 +103,12 @@ main{
 
 #img1{
 
-  background-image: url('mochilatransparente.png')  ;    
+  background-image: url('mochilatransparente2.png')  ;    
 
 }
 #img2{
 
-  background-image: url("mochilatransparente.png");
+  background-image: url("mochilatransparente3.png");
 
 }
 #img3{
@@ -126,6 +126,48 @@ main{
 #img5{
 
    background-image: url("garrafa.png.png");
+
+}
+
+#img6{
+
+  background-image: url("barracatransparente2.png");
+
+}
+
+#img7{
+
+  background-image: url("barracatransparente3.png");
+
+}
+
+#img8{
+
+  background-image: url("garrafatransparente2.png");
+
+}
+
+#img9{
+
+  background-image: url("garrafatransparente3.png");
+
+}
+
+#img10{
+
+  background-image: url("camisa.png.png");
+
+}
+
+#img11{
+
+  background-image: url("calça.png.png");
+
+}
+
+#img12{
+
+  background-image: url("botatransparente.png");
 
 }
 
@@ -195,5 +237,13 @@ width: 50%;
 
 }
 
+main > a{
 
+  color: bisque;
+  background-color: rgb(54, 135, 34);
+  text-decoration: none;
+  padding: 4px;
+  border-radius: 4px;
+
+}
 
