@@ -1,0 +1,88 @@
+body{
+
+  background-color: #2f6273;
+
+
+}
+.cards{
+
+    
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+    font-family:  "Comic sans MS" ;
+    
+
+}
+.cards > a{
+
+    
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    gap: 5px;
+    text-decoration: none;
+    color: black;
+ 
+ }
+
+ .img{
+    width: 200px;
+    height: 210px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.4s;
+
+ }
+#img1{
+
+    background-image: url('mochilatransparente.png')  ;    
+
+}
+#img2{
+
+    background-image: url("mochilatransparente.png");
+
+}
+#img3{
+
+    background-image: url("mochilatransparente.png");
+
+}
+ /*.sombra{
+
+    width: 200px;
+    height: 210px;
+    background-color: white;
+    transition: 1s;
+
+
+
+ }*/
+
+
+ .img:hover {
+
+    background-color: rgba(255, 255, 255, 0.137);
+    
+
+}
+.cards > a > div > i{
+    font-size: 15px ;
+    opacity: 0.7;
+
+
+
+
+}
+.cards > a > label{
+
+     font-size: 20px;
+     width: 200px;
+   
+
+
+}

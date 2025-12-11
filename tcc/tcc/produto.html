@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecopack</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="site.css">
+    <link rel="icon" href="imagens/icon.png">
+    <script src="script.js"></script>
+</head>
+<body>
+
+<nav>
+        <img src="imagens/Ecopack.png" alt="Ecopack">
+        <input type="text" placeholder="pesquisar">
+        <div class="links">
+          <a href="site.html"></i><i class="fa fa-home"></i> Pagina inicial</a>
+          <a href="loja.html"><i class="fa fa-shopping-cart"></i> Loja</a>
+          <a href="sobre.html"><i class="fa fa-question-circle-o "></i> Sobre</a>
+          <a href="login.html"><i class="fa fa-share-square-o"></i> Login</a>
+          <a href="carrinho.html"><i class="fa fa-shopping-cart"></i> Carrinho</a>
+        </div>
+        <div class="dropdown">
+         <i class="fa fa-bars"></i>
+          <div>
+            <a href="site.html"></i><i class="fa fa-home"></i> Pagina inicial</a>
+            <a href="loja.html"><i class="fa fa-shopping-cart"></i> Loja</a>
+            <a href="sobre.html"><i class="fa fa-question-circle-o "></i> Sobre</a>
+            <a href="login.html"><i class="fa fa-share-square-o"></i> Login</a>
+            <a href="carrinho.html"><i class="fa fa-shopping-cart"></i> Carrinho</a>
+          </div>
+        </div>
+      </nav>
+         
+      <main>
+            <div class="prod">
+                <div id="prod-img" class="img">
+                </div>
+                <div class="proinfo">
+                    <h1 id="prod-nome">Mochila Sustentavel</h1>
+                    <p id="prod-desc">Mochila sustentavel feita com materiais reciclados e de baixo impacto ambiental, resistente e leve, ideal para trilhas.</p>
+                    <div>
+                        <i id="prod-av" class="fa fa-star-o">4,7k</i>
+                        <i id="prod-preco" class="fa fa-usd">50</i> <br>
+                    </div>
+                    <a href="" onclick="addcarrinho()" class="addcarrinho"><i class="fa fa-shopping-cart"></i> Adicionar ao carrinho</a>
+                </div>
+
+            </div>
+            
+      </main>
+
+      <script>verProduto()</script>
+
+</body>
+</html>
